@@ -1,6 +1,7 @@
 # War Crimes Explorer
-In-browser learning about genocide, war crimes, crimes against humanity, and aggression.
-Interactively enter facts and discover the applicable international laws.
+* In-browser learning about genocide, war crimes, crimes against humanity, and aggression.
+* Interactively enter facts and discover the laws that might have been broken.
+* Possibly submit the information to the ICC (International Criminal Court) as a witness statement.
 
 ## Status: First rough code and looking for assistance.
 Volunteers and paid contributors are welcome, depending on experience.
