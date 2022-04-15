@@ -1,6 +1,8 @@
 # War Crimes Explorer
 
-In support of Ukraine, we're educating the world about war crimes.
+In support of Ukraine, we're educating the world about war crimes through several projects.
+
+The War Crimes Explorer is starting development today:
 
 * In-browser learning about genocide, war crimes, crimes against humanity, and aggression.
 * Interactively enter facts and discover the laws that might have been broken.
