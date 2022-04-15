@@ -62,4 +62,5 @@ elements(article_8_2_a_ii, D, V) :-
 	act(D, tortured, V).     
 ```
 
-CLIPS is another option.
+* CLIPS is another option.
+* What else?
