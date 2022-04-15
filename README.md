@@ -14,6 +14,10 @@ crime(crime_of_aggression).
 crime(crime_against_humanity).
 
 
+/*
+ * D = Defendant
+ * V = Victim
+ */
 criminal_liability(war_crime, Article, D, V) :- 
         protected_person(V),
         knowledge_of_protected_status(D, V),      
