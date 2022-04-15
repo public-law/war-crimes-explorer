@@ -5,7 +5,8 @@ Interactively enter facts and discover the applicable international laws.
 ## Status: First rough code and looking for assistance.
 
 I have a background in Expert Systems, and so that's my first idea for implementing the Explorer.
-Prolog seems like a good match for modelling legal statutes:
+**I'm open to any ideas for implementing this.**
+Prolog seems like a good match for modelling legal statutes. Here's a first little try:
 
 ```prolog
 /*
