@@ -3,6 +3,7 @@ In-browser learning about genocide, war crimes, crimes against humanity, and agg
 Interactively enter facts and discover the applicable international laws.
 
 ## Status: First rough code and looking for assistance.
+Volunteers and paid contributors are welcome, depending on experience.
 
 I have a background in Expert Systems, and so that's my first idea for implementing the Explorer.
 **I'm open to any ideas for implementing this.**
