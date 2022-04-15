@@ -56,9 +56,7 @@ criminal_liability(genocide, Statute, D, V) :-
  */
 criminal_liability(war_crime, Statute, D, V) :-
 	protected_by_geneva_convention(V),
-	knowledge_of_protected_status(D, V),
 	international_conflict(D, V),
-	knowledge_of_international_conflict(D),
 	elements(Statute, D, V).
 
 
