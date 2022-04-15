@@ -8,7 +8,8 @@ Volunteers and paid contributors are welcome, depending on experience.
 
 I have a background in Expert Systems, and so that's my first idea for implementing the Explorer.
 **I'm open to any ideas for implementing this.**
-Prolog seems like a good match for modelling legal statutes. Here's a first little try:
+Prolog seems like a good match for modelling legal statutes. [Tau Prolog](http://tau-prolog.org) runs in the browser.
+Here's a first little try:
 
 ```prolog
 /*
