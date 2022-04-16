@@ -1,7 +1,7 @@
 /*
  * Crimes within the jurisdiction of the International Criminal Court.
  * 
- * https://world.public.law/rome_statute/article_5
+ * https://world.public.law/rome_statute/article_5_crimes_within_the_jurisdiction_of_the_court
  */
 crime(genocide).
 crime(war_crime).
@@ -26,14 +26,14 @@ protected_by_geneva_convention(P) :- religious_personnel(P).
 
 /*
  * Genocide
- * https://world.public.law/rome_statute/article_6
+ * https://world.public.law/rome_statute/article_6_genocide
  */
 criminal_liability(genocide, Statute, D, V) :-
 	elements(Statute, D, V).
 
 /*
  * War crimes
- * https://world.public.law/rome_statute/article_8
+ * https://world.public.law/rome_statute/article_8_war_crimes
  */
 criminal_liability(war_crime, Statute, D, V) :-
 	protected_by_geneva_convention(V),
@@ -46,3 +46,4 @@ elements(article_8_2_a_i, D, V) :-
 
 elements(article_8_2_a_ii, D, V) :-
 	act(D, tortured, V).     
+```
