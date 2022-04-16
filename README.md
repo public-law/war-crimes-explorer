@@ -67,6 +67,6 @@ elements(article_8_2_a_ii, D, V) :-
 	act(D, tortured, V).     
 ```
 
-* CLIPS is another option, possibly run in the browser via a [clipspy](https://github.com/noxdafox/clipspy) server.
-* [Vaticle Type DB](https://vaticle.com/) is another possibility.
+* CLIPS is another option. Maybe it could run in the browser via a [clipspy](https://github.com/noxdafox/clipspy) server?
+* [Vaticle Type DB](https://vaticle.com/) is another possibility. It supports inference explanations, but I couldn't find any info about web clients.
 * What else? Some kind of very intelligent chatbot framework?
