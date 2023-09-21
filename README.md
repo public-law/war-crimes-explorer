@@ -1,6 +1,6 @@
 # War Crimes Explorer
 
-In support of Ukraine, we're educating the world about war crimes through several projects.
+In support of Ukraine, I'm educating the world about war crimes through several projects.
 
 The War Crimes Explorer is starting development today:
 
