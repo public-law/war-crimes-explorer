@@ -8,7 +8,7 @@ The War Crimes Explorer idea:
 
 ## Status: First rough code and looking for assistance.
 
-I have a background in Expert Systems, and so that's my first idea for implementing the Explorer.
+This is my first idea for implementing the Explorer.
 **I'm open to any ideas for implementing this.**
 Prolog seems like a good match for modelling legal statutes. [Tau Prolog](http://tau-prolog.org) runs in the browser.
 Here's a first little try:
