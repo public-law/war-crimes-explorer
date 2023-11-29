@@ -46,3 +46,18 @@ elements(article_8_2_a_i, D, V) :-
 
 elements(article_8_2_a_ii, D, V) :-
 	act(D, tortured, V).
+
+
+/*********************************************************
+ * Fact templates.
+ */
+act(D, Kind, V).
+international_conflict(D, V).
+
+/*
+ * Protected Persons designations
+ */
+civilian(P).
+medical_personnel(P).
+prisoner_of_war(P).
+religious_personnel(P).
