@@ -10,7 +10,7 @@ The War Crimes Explorer idea:
 
 This is my first idea for implementing the Explorer.
 **I'm open to any ideas for implementing this.**
-Prolog seems like a good match for modelling legal statutes. [Tau Prolog](http://tau-prolog.org) runs in the browser.
+Prolog seems like a good match for modelling legal statutes.
 Here's a first little try:
 
 ```prolog
@@ -65,6 +65,8 @@ elements(article_8_2_a_ii, D, V) :-
 ```
 
 ### Other implementation ideas
+* [Tau Prolog](http://tau-prolog.org) runs in the browser.
+* There's a Prolog implementation for Erlang; that could run a browser app.
 * CLIPS is another option. Maybe it could run in the browser via a [clipspy](https://github.com/noxdafox/clipspy) server?
 * [Vaticle Type DB](https://vaticle.com/) is another possibility. It supports inference explanations, but I couldn't find any info about web clients.
 * Writing this as a simulation using Typescript, Elm, or Phoenix Live View.
