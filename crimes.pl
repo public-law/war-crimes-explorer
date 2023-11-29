@@ -46,3 +46,12 @@ elements(article_8_2_a_i, D, V) :-
 
 elements(article_8_2_a_ii, D, V) :-
 	act(D, tortured, V).
+
+
+:- dynamic act/3.
+:- dynamic international_conflict/2.
+
+:- dynamic civilian/1.
+:- dynamic prisoner_of_war/1.
+:- dynamic medical_personnel/1.
+:- dynamic religious_personnel/1.
