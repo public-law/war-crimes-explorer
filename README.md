@@ -7,7 +7,6 @@ The War Crimes Explorer idea:
 * Possibly submit the information to the ICC (International Criminal Court) as a witness statement.
 
 ## Status: First rough code and looking for assistance.
-Volunteers and paid contributors are welcome, depending on experience.
 
 I have a background in Expert Systems, and so that's my first idea for implementing the Explorer.
 **I'm open to any ideas for implementing this.**
