@@ -28,20 +28,20 @@ genocidal_act(D, G) :- act(D, imposed_on_members, G).
 genocidal_act(D, G) :- act(D, forcibly_transferred_children_of_members, G).
 
 /* Test data */
-genocidal_intent(darfur, fur).
-genocidal_intent(darfur, masalit).
-genocidal_intent(darfur, zaghawa).
-genocidal_intent(darfur, tunjur).
+genocidal_intent(sudan, fur).
+genocidal_intent(sudan, masalit).
+genocidal_intent(sudan, zaghawa).
+genocidal_intent(sudan, tunjur).
 
 group(fur).
 group(masalit).
 group(zaghawa).
 group(tunjur).
 
-act(darfur, killed_members, fur).
-act(darfur, killed_members, masalit).
-act(darfur, killed_members, zaghawa).
-act(darfur, killed_members, tunjur).
+act(sudan, killed_members, fur).
+act(sudan, killed_members, masalit).
+act(sudan, killed_members, zaghawa).
+act(sudan, killed_members, tunjur).
 
 
 
