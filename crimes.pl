@@ -17,6 +17,11 @@ criminal_liability(genocide, D, G) :-
 	group(G),
 	elements(genocide, D, G).
 
+group(G) :- national_group(G).
+group(G) :- ethnical_group(G).
+group(G) :- racial_group(G).
+group(G) :- religious_group(G).
+
 elements(genocide, D, G) :-
 	genocidal_intent(D, G),
 	genocidal_act(D, G).
@@ -28,22 +33,17 @@ genocidal_act(D, G) :- act(D, imposed_on_members, G).
 genocidal_act(D, G) :- act(D, forcibly_transferred_children_of_members, G).
 
 /* Test data */
-group(fur).
-group(masalit).
-group(zaghawa).
-group(tunjur).
+ethnical_group(fur).
+ethnical_group(masalit).
+ethnical_group(zaghawa).
 
 genocidal_intent(sudan, fur).
 genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, zaghawa).
-genocidal_intent(sudan, tunjur).
 
 act(sudan, killed_members, fur).
 act(sudan, killed_members, masalit).
 act(sudan, killed_members, zaghawa).
-act(sudan, killed_members, tunjur).
-
-
 
 
 /*
@@ -74,7 +74,12 @@ act(sudan, killed_members, tunjur).
 
 
 :- dynamic genocidal_intent/2.
-:- dynamic group/1.
+
+:- dynamic national_group/1.
+:- dynamic ethnical_group/1.
+:- dynamic racial_group/1.
+:- dynamic religious_group/1.
+
 
 :- dynamic act/3.
 
