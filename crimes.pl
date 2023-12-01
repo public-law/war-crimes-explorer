@@ -15,24 +15,24 @@
  * Genocide
  * https://world.public.law/rome_statute/article_6_genocide
  */
-criminal_liability(genocide, D, G) :-
-	group(G),
-	elements(genocide, D, G).
+criminal_liability(genocide, Accused, Group) :-
+	article_6_group(Group),
+	elements(genocide, Accused, Group).
 
-group(G) :- national_group(G).
-group(G) :- ethnic_group(G).
-group(G) :- racial_group(G).
-group(G) :- religious_group(G).
+article_6_group(Group) :- national_group(Group).
+article_6_group(Group) :- ethnic_group(Group).
+article_6_group(Group) :- racial_group(Group).
+article_6_group(Group) :- religious_group(Group).
 
-elements(genocide, D, G) :-
-	genocidal_intent(D, G),
-	genocidal_act(D, G).
+elements(genocide, Accused, Group) :-
+	genocidal_intent(Accused, Group),
+	genocidal_act(Accused, Group).
 
-genocidal_act(D, G) :- act(D, killed_members, G).
-genocidal_act(D, G) :- act(D, caused_serious_bodily_harm_to_members, G).
-genocidal_act(D, G) :- act(D, deliberately_inflicted_on_members, G).
-genocidal_act(D, G) :- act(D, imposed_on_members, G).
-genocidal_act(D, G) :- act(D, forcibly_transferred_children_of_members, G).
+genocidal_act(Accused, Group) :- act(Accused, killed_members, Group).
+genocidal_act(Accused, Group) :- act(Accused, caused_serious_bodily_harm_to_members, Group).
+genocidal_act(Accused, Group) :- act(Accused, deliberately_inflicted_on_members, Group).
+genocidal_act(Accused, Group) :- act(Accused, imposed_on_members, Group).
+genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children_of_members, Group).
 
 
 /*
@@ -53,8 +53,9 @@ genocidal_intent(sudan, fur).
 genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, zaghawa).
 
-/* Sudan has killed members of these groups */
+/* The actual bad acts that were committed */
 act(sudan, killed_members, fur).
+act(sudan, caused_serious_bodily_harm, fur).
 act(sudan, killed_members, masalit).
 act(sudan, killed_members, zaghawa).
 act(sudan, killed_members, jur).
