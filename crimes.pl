@@ -42,11 +42,20 @@ genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children_of_m
  * or dialog with a chatbot.
  */
 
-/* Describe ethnic groups */
+/* Sudanese ethnic groups */
+ethnic_group(beja).
+ethnic_group(berti).
+ethnic_group(dajo).
+ethnic_group(fallata).
 ethnic_group(fur).
-ethnic_group(masalit).
-ethnic_group(zaghawa).
+ethnic_group(gimir).
+ethnic_group(ingessana).
 ethnic_group(jur).
+ethnic_group(masalit).
+ethnic_group(nuba).
+ethnic_group(tunjur).
+ethnic_group(uduk).
+ethnic_group(zaghawa).
 
 /* Sudan has the intent to eliminate these groups */
 genocidal_intent(sudan, fur).
