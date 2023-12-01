@@ -61,7 +61,7 @@ ethnic_group(zaghawa).
 religious_group(sunni_muslim).
 religious_group(christian).
 
-/* Sudan has the intent to destroy these groups */
+/* Sudan has/had the intent to destroy these groups */
 genocidal_intent(sudan, fur).
 genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, zaghawa).
