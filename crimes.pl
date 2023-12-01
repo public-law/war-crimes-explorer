@@ -1,17 +1,4 @@
 /*
- * Configuration
- */
-:- dynamic genocidal_intent/2.
-
-:- dynamic national_group/1.
-:- dynamic ethnic_group/1.
-:- dynamic racial_group/1.
-:- dynamic religious_group/1.
-
-:- dynamic act/3.
-
-
-/*
  * Genocide
  * https://world.public.law/rome_statute/article_6_genocide
  */
@@ -79,3 +66,16 @@ genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, nuba).
 genocidal_intent(sudan, tunjur).
 genocidal_intent(sudan, zaghawa).
+
+
+/*
+ * Configuration
+ */
+:- dynamic genocidal_intent/2.
+
+:- dynamic national_group/1.
+:- dynamic ethnic_group/1.
+:- dynamic racial_group/1.
+:- dynamic religious_group/1.
+
+:- dynamic act/3.
