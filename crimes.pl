@@ -75,4 +75,4 @@ act(sudan, caused_serious_bodily_harm_to_members, fur).
 act(sudan, killed_members, masalit).
 act(sudan, killed_members, zaghawa).
 act(sudan, killed_members, jur).
-act(sudan, killed_members, arab).
+act(sudan, killed_members, christian).
