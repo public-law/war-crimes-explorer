@@ -39,35 +39,7 @@ genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children, Gro
  * or dialog with a chatbot.
  */
 
-/* Sudanese groups */
-ethnic_group(arab).
-ethnic_group(beja).
-ethnic_group(berti).
-ethnic_group(dajo).
-ethnic_group(fallata).
-ethnic_group(fur).
-ethnic_group(gimir).
-ethnic_group(ingessana).
-ethnic_group(jur).
-ethnic_group(masalit).
-ethnic_group(nuba).
-ethnic_group(tunjur).
-ethnic_group(uduk).
-ethnic_group(zaghawa).
-
-religious_group(sunni_muslim).
-religious_group(christian).
-
-/* Sudan has/had the goal of destroying these groups */
-genocidal_intent(sudan, fallata).
-genocidal_intent(sudan, fur).
-genocidal_intent(sudan, jur).
-genocidal_intent(sudan, masalit).
-genocidal_intent(sudan, nuba).
-genocidal_intent(sudan, tunjur).
-genocidal_intent(sudan, zaghawa).
-
-/* The actual bad acts that were committed */
+/* Bad acts that were committed */
 act(sudan, killed, beja).
 act(sudan, killed, fur).
 act(sudan, caused_serious_bodily_harm, fur).
@@ -75,3 +47,33 @@ act(sudan, killed, masalit).
 act(sudan, killed, nuba).
 act(sudan, killed, christian).
 act(sudan, killed, zaghawa).
+
+
+% /* Sudanese groups */
+% ethnic_group(arab).
+% ethnic_group(beja).
+% ethnic_group(berti).
+% ethnic_group(dajo).
+% ethnic_group(fallata).
+% ethnic_group(fur).
+% ethnic_group(gimir).
+% ethnic_group(ingessana).
+% ethnic_group(jur).
+% ethnic_group(masalit).
+% ethnic_group(nuba).
+% ethnic_group(tunjur).
+% ethnic_group(uduk).
+% ethnic_group(zaghawa).
+
+% religious_group(sunni_muslim).
+% religious_group(christian).
+
+
+% /* Sudan has/had the goal of destroying these groups */
+% genocidal_intent(sudan, fallata).
+% genocidal_intent(sudan, fur).
+% genocidal_intent(sudan, jur).
+% genocidal_intent(sudan, masalit).
+% genocidal_intent(sudan, nuba).
+% genocidal_intent(sudan, tunjur).
+% genocidal_intent(sudan, zaghawa).
