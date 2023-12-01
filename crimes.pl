@@ -16,23 +16,20 @@
  * https://world.public.law/rome_statute/article_6_genocide
  */
 criminal_liability(genocide, Accused, Group) :-
+	genocidal_intent(Accused, Group),
 	article_6_group(Group),
-	elements(genocide, Accused, Group).
+	genocidal_act(Accused, Group).
 
 article_6_group(Group) :- national_group(Group).
 article_6_group(Group) :- ethnic_group(Group).
 article_6_group(Group) :- racial_group(Group).
 article_6_group(Group) :- religious_group(Group).
 
-elements(genocide, Accused, Group) :-
-	genocidal_intent(Accused, Group),
-	genocidal_act(Accused, Group).
-
-genocidal_act(Accused, Group) :- act(Accused, killed_members, Group).
-genocidal_act(Accused, Group) :- act(Accused, caused_serious_bodily_harm_to_members, Group).
-genocidal_act(Accused, Group) :- act(Accused, deliberately_inflicted_on_members, Group).
-genocidal_act(Accused, Group) :- act(Accused, imposed_on_members, Group).
-genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children_of_members, Group).
+genocidal_act(Accused, Group) :- act(Accused, killed, Group).
+genocidal_act(Accused, Group) :- act(Accused, caused_serious_bodily_harm, Group).
+genocidal_act(Accused, Group) :- act(Accused, deliberately_inflicted_conditions, Group).
+genocidal_act(Accused, Group) :- act(Accused, imposed_measures_to_prevent_births, Group).
+genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children, Group).
 
 
 /*
@@ -70,9 +67,9 @@ genocidal_intent(sudan, tunjur).
 genocidal_intent(sudan, zaghawa).
 
 /* The actual bad acts that were committed */
-act(sudan, killed_members, fur).
-act(sudan, caused_serious_bodily_harm_to_members, fur).
-act(sudan, killed_members, masalit).
-act(sudan, killed_members, zaghawa).
-act(sudan, killed_members, jur).
-act(sudan, killed_members, christian).
+act(sudan, killed, fur).
+act(sudan, caused_serious_bodily_harm, fur).
+act(sudan, killed, masalit).
+act(sudan, killed, zaghawa).
+act(sudan, killed, jur).
+act(sudan, killed, christian).
