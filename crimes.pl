@@ -39,7 +39,7 @@ genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children, Gro
  * or dialog with a chatbot.
  */
 
-/* Sudanese ethnic groups */
+/* Sudanese groups */
 ethnic_group(arab).
 ethnic_group(beja).
 ethnic_group(berti).
