@@ -34,15 +34,27 @@ genocidal_act(D, G) :- act(D, deliberately_inflicted_on_members, G).
 genocidal_act(D, G) :- act(D, imposed_on_members, G).
 genocidal_act(D, G) :- act(D, forcibly_transferred_children_of_members, G).
 
-/* Test data */
+
+/*
+ * Test data 
+ * 
+ * Normally, this would be provided by the user via a web interface
+ * or dialog with a chatbot.
+ */
+
+/* Describe ethnic groups */
 ethnic_group(fur).
 ethnic_group(masalit).
 ethnic_group(zaghawa).
+ethnic_group(jur).
 
+/* Sudan has the intent to eliminate these groups */
 genocidal_intent(sudan, fur).
 genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, zaghawa).
 
+/* Sudan has killed members of these groups */
 act(sudan, killed_members, fur).
 act(sudan, killed_members, masalit).
 act(sudan, killed_members, zaghawa).
+act(sudan, killed_members, jur).
