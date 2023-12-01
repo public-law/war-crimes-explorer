@@ -43,6 +43,7 @@ genocidal_act(Accused, Group) :- act(Accused, forcibly_transferred_children_of_m
  */
 
 /* Sudanese ethnic groups */
+ethnic_group(arab).
 ethnic_group(beja).
 ethnic_group(berti).
 ethnic_group(dajo).
@@ -57,7 +58,10 @@ ethnic_group(tunjur).
 ethnic_group(uduk).
 ethnic_group(zaghawa).
 
-/* Sudan has the intent to eliminate these groups */
+religious_group(sunni_muslim).
+religious_group(christian).
+
+/* Sudan has the intent to destroy these groups */
 genocidal_intent(sudan, fur).
 genocidal_intent(sudan, masalit).
 genocidal_intent(sudan, zaghawa).
